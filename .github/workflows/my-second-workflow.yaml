@@ -1,0 +1,19 @@
+name: Second Hello World
+on:
+  workload_dispatch
+
+jobs:
+  steps:
+    first-step:
+      runs-on: ubuntu:latest
+        - run: echo Hello World
+
+    second-step-python:
+      runs-on: ubuntu:latest
+        - run: print("Hello World")
+          shell: python
+    
+    third-step-java:
+      uses: actions/hello-world-javascript-action
+      with:
+        who-to-great: "World and Aleandro"
