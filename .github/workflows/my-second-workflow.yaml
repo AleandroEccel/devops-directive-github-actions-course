@@ -1,6 +1,6 @@
 name: Second Hello World
 on:
-  workload_dispatch
+  workflow_dispatch
 
 jobs:
   steps:
