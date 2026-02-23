@@ -6,14 +6,17 @@ jobs:
   steps:
     first-step:
       runs-on: ubuntu:latest
+      steps:
         - run: echo Hello World
 
     second-step-python:
       runs-on: ubuntu:latest
+      steps:
         - run: print("Hello World")
           shell: python
     
     third-step-java:
-      uses: actions/hello-world-javascript-action
-      with:
-        who-to-great: "World and Aleandro"
+      steps:
+        - uses: actions/hello-world-javascript-action
+          with:
+            who-to-great: "World and Aleandro"
