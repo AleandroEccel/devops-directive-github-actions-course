@@ -10,7 +10,7 @@ jobs:
         - run: echo Hello World
 
     second-step-python:
-      runs-on: ubuntu:latest
+      runs-on: ubuntu:24.04
       steps:
         - run: print("Hello World")
           shell: python
