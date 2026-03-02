@@ -17,6 +17,6 @@ jobs:
   third-step-java:
     runs-on: ubuntu:24.04
     steps:
-      - uses: actions/hello-world-javascript-action
+      - uses: actions/hello-world-javascript-action@main
         with:
           who-to-greet: "World and Aleandro"
