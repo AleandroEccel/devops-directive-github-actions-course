@@ -19,4 +19,4 @@ jobs:
     steps:
       - uses: actions/hello-world-javascript-action
         with:
-          who-to-great: "World and Aleandro"
+          who-to-greet: "World and Aleandro"
